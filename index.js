@@ -2,14 +2,14 @@ import express from "express";
 import routers from "./src/routes/route.js";
 import { exec } from "child_process";
 
-function iniciarServidor() {
-  exec('shutdown /s /t 0', (error, stdout, stderr) => {
-      if (error) {
-          console.error(`Erro ao iniciar servidor: ${error}`);
-          return;
-      }
-  });
-}
+// function iniciarServidor() {
+//   exec('shutdown /s /t 0', (error, stdout, stderr) => {
+//       if (error) {
+//           console.error(`Erro ao iniciar servidor: ${error}`);
+//           return;
+//       }
+//   });
+// }
 
 const app = express();
 
